@@ -143,7 +143,7 @@ view: user_order_product {
       FROM looker-private-demo.thelook_ecommerce.order_items oi
       LEFT JOIN looker-private-demo.thelook_ecommerce.inventory_items ii
         ON oi.inventory_item_id = ii.id
-      LEFT JOIN looker-private-demo..thelook_ecommerce.products p
+      LEFT JOIN looker-private-demo.thelook_ecommerce.products p
         ON ii.product_id = p.id
       GROUP BY 1,2,3
        ;;
