@@ -18,6 +18,11 @@ explore: order_items {
   label: "(1) Orders, Items and Users"
   view_name: order_items
 
+  access_filter: {
+      field: products.brand
+      user_attribute: rls_auto_avaliar
+  }
+
   join: order_facts {
     type: left_outer
     view_label: "Orders"
